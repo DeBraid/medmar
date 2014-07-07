@@ -1,1 +1,10 @@
 /* CSS declarations go here */
+.backlog {
+  margin-bottom: 1em;
+}
+
+footer {
+  font-size: 0.7em;
+  float: right;
+  display: inline-block;
+}

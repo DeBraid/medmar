@@ -4,6 +4,8 @@
 
 <body>
   {{> table}}
+  {{> backlog}}
+  {{> footy}}
 </body>
 
 <template name="table">
@@ -40,4 +42,41 @@
        </div>
      </div>
    </div>
+</template>
+
+<template name="backlog">
+  <div class="container">
+    <div class="row">
+      <h3>News</h3>
+  
+      {{#each requests}}
+        <li>
+          <h5 class="backlog">
+          {{#if request }}
+          Estimated backlog for application to produce medical marijuana in Canada
+          <strong>{{ request }}</strong> as reported on
+          {{/if}}
+          {{ asOf }} by <a href="{{ link }}">{{ source }}</a> 
+          </h5>
+        </li>
+
+        <blockquote>{{ quote }}</blockquote>
+      
+      {{/each}}
+  
+    </div>
+  </div>
+
+</template>
+
+<template name="footy">
+  <div class="container">
+    <div class="row">
+      <footer>
+        <p>Site by <a href="http://cacheflow.ca" target="_blank">cacheflow.ca</a></p>
+        <p>Last update July 7th, 2014</p>
+      </footer>
+    </div>
+  </div>
+
 </template>

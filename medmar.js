@@ -6,4 +6,9 @@ if (Meteor.isClient) {
 
   };
 
+  Template.backlog.requests = function () {
+    
+    return Reqs.find();
+  };
+
 }
