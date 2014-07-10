@@ -4,7 +4,7 @@
 
 <body>
   {{> table}}
-  {{> backlog}}
+  {{> news}}
   {{> footy}}
 </body>
 
@@ -44,12 +44,12 @@
    </div>
 </template>
 
-<template name="backlog">
+<template name="news">
   <div class="container">
     <div class="row">
       <h3>News</h3>
   
-      {{#each requests}}
+      {{#each newsItem}}
         <li>
           <h5 class="news">
           {{#if request }}
@@ -74,7 +74,7 @@
     <div class="row">
       <footer>
         <p>Site by <a href="http://cacheflow.ca" target="_blank">cacheflow.ca</a></p>
-        <p>Last update July 7th, 2014</p>
+        <p>Last update July 10th, 2014</p>
       </footer>
     </div>
   </div>

@@ -6,7 +6,7 @@ if (Meteor.isClient) {
 
   };
 
-  Template.backlog.requests = function () {
+  Template.news.newsItem = function () {
     
     return Reqs.find();
   };
